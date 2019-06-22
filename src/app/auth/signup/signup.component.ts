@@ -35,4 +35,5 @@ export class SignupComponent implements OnInit {
     this.signinService.signupUser(email, password);
     this.db.list('/users').push({Email: email,Passwod: password, isAdmin: false});
   }
+
 }
