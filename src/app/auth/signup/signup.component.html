@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h2>Sign Up</h2>
-            <form [formGroup]="signupForm">
+            <h2>Sign up</h2>
+            <form [formGroup]="signupForm" (ngSubmit)="onSignup(f)" #f='ngForm'>
 
                 <div class="form-group">
                     <label>Email</label>
