@@ -7,6 +7,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireAuthModule } from "@angular/fire/auth";
 import { 
   MatButtonModule,
   MatCheckboxModule,
@@ -19,16 +20,18 @@ import {
   MatTableModule,
   MatSortModule,
   MatRadioModule} from '@angular/material';
+
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProductsComponent } from './products/products.component';
 
 @NgModule({
+  
   declarations: [
     AppComponent,
     SigninComponent,
     SignupComponent,
-    ProductsComponent
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { ProductsComponent } from './products/products.component';
     MatDialogModule,
     MatTableModule,
     MatSortModule,
-    MatRadioModule
+    MatRadioModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

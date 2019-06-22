@@ -4,18 +4,18 @@
 a:hover{
     text-decoration: none;
 }
-.first-information{
-    max-width: 100%;
-    height: 6rem;
-    background-color: #3f51b5;
-    color: #fff;
+.site-name{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.filler{
+    margin-right: 70%;
 }
 h1{
     padding-top: 22px;
     margin-left: 10px;
     display: inline-block;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
 }
 nav{
     margin-top: 2rem;
@@ -24,21 +24,30 @@ nav{
     text-align: center;
 }
 .btn{
-    margin-right: 3rem;
+    margin-right: 5rem;
     width: 9rem;
-}
-.link{
-    color: #fff;
-    padding-left: 70%;
-    font-size: 1.5rem;
 }
 hr {
     border: none;
     color: grey;
     background-color: grey;
     height: 2px;
-    opacity: 0.6; 
+    width: 65%;
+    opacity: 0.6;
+    text-align: center;
    }
+   .filler{
+       padding-left: 75%;
+       color: #fff;
+   }
+   footer{
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+    }
+    p{
+        text-align: center;
+    }
 
 
 

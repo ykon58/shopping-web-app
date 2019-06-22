@@ -1,45 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
   <header>
-    <div class="container first-information">
-      <div class="row">
-        <div class="col">
-          <h1>Shopping web app</h1>
-          <a class="link" href="https://mail.google.com/mail">user@gmail.com</a>
-        </div>
-      </div>
-    </div>
+    <mat-toolbar color="primary">  
+      <mat-toolbar-row>
+          <span class="site-name">Shopping web app</span>
+          <a matTabLink href="" class = "filler">user@gmail.com</a>
+      </mat-toolbar-row>
+    </mat-toolbar>
   </header>
   <nav>
     <div class="col main-menu">
      <a routerLink='/products'><button class="btn" mat-raised-button color="primary">Products</button></a> 
-      <button class="btn" mat-raised-button color="primary">Favorite</button>
-      <button class="btn" mat-raised-button color="primary">Admin</button>
-      <button class="btn" mat-raised-button color="primary">Home</button>
+      <button 
+        class="btn" 
+        mat-raised-button 
+        color="primary">Favorite</button>
+      <button class="btn" mat-raised-button color="primary">Cart</button>
+      <button routerLink='/signup' class="btn" mat-raised-button color="primary">Sign up</button>
       <a routerLink='/signin'><button class="btn" mat-raised-button color="primary">Sign in</button></a>
     </div>
     <hr>
   </nav>
   
-  <main>
   
-  
-  </main>
-  
-  <footer>
-  
-  
-  
+  <footer class="footer py-3">
+    <div class="container">
+      <hr>
+      <p>2019</p>
+    </div>
   </footer>
-</body>
-</html>
 
 
 
