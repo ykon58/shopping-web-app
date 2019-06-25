@@ -1,32 +1,31 @@
-  <header>
-    <mat-toolbar color="primary">  
-      <mat-toolbar-row>
-          <span class="site-name">Shopping web app</span>
-          <a matTabLink href="" class = "filler">user@gmail.com</a>
-      </mat-toolbar-row>
-    </mat-toolbar>
-  </header>
-  <nav>
-    <div class="col main-menu">
-     <a routerLink='/products'><button class="btn" mat-raised-button color="primary">Products</button></a> 
-      <button 
-        class="btn" 
-        mat-raised-button 
-        color="primary">Favorite</button>
-      <button class="btn" mat-raised-button color="primary">Cart</button>
-      <button routerLink='/signup' class="btn" mat-raised-button color="primary">Sign up</button>
-      <a routerLink='/signin'><button class="btn" mat-raised-button color="primary">Sign in</button></a>
-    </div>
+<header>
+  <mat-toolbar color="primary">
+    <span class="site-name">shopping web app</span>
+    <span class="mail">user@gmail.com <a routerLink='/logout' class="button">log out</a></span>
+    
+  </mat-toolbar>
+</header>
+<nav>
+  <div class="col main-menu">
+    <a routerLink='/products'><button class="btn" mat-raised-button color="primary">Products</button></a> 
+    <button 
+      class="btn" 
+      mat-raised-button 
+      color="primary">Favorite</button>
+    <button class="btn" mat-raised-button color="primary">Cart</button>
+    <button routerLink='/signup' class="btn" mat-raised-button color="primary">Sign up</button>
+    <a routerLink='/signin'><button class="btn" mat-raised-button color="primary">Sign in</button></a>
+  </div>
+  <hr>
+</nav>
+
+
+<footer class="footer py-3">
+  <div class="container">
     <hr>
-  </nav>
-  
-  
-  <footer class="footer py-3">
-    <div class="container">
-      <hr>
-      <p>2019</p>
-    </div>
-  </footer>
+    <p>2019</p>
+  </div>
+</footer>
 
 
 

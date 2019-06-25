@@ -4,18 +4,40 @@
 a:hover{
     text-decoration: none;
 }
+.first-information{
+    max-width: 100%;
+    padding: 0;
+    background-color: #3f51b5;
+    color: #fff;
+}
 .site-name{
     text-transform: uppercase;
     font-size: 30px;
+    width: 50%;
+    display: inline-block;
+    margin-right: -3px;
 }
-.filler{
-    margin-right: 70%;
+.mail{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
 }
+.button{
+    padding-left: 4%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 h1{
     padding-top: 22px;
     margin-left: 10px;
     display: inline-block;
     text-transform: uppercase;   
+}
+.log-out{
+    color: #fff;
+    margin-left: 6rem;
+    border: solid #000 2px;
 }
 nav{
     margin-top: 2rem;
