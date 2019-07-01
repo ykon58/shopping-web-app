@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, NgForm } from '@angular/forms';
+import { SigninService } from '../signin.service';
 
 @Component({
   selector: 'app-signin',
@@ -7,8 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  signinForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl('')
+  });
+
+  constructor(
+    private signinService: SigninService,
+  ) {
+    
+  }
 
 ngOnInit() { }
+
+onSignin(form: NgForm) {
+  form.value['isAdmin'] = false;
+  const email = form.value.email;
+  const password = form.value.password;
+  this.signinService.signinUser(email, password);
+  }
 
 }

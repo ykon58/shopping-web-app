@@ -1,7 +1,7 @@
 <header>
   <mat-toolbar color="primary">
     <span class="site-name">shopping web app</span>
-    <span class="mail">user@gmail.com <a routerLink='/logout' class="button">log out</a></span>
+    <span class="mail" *ngIf="signinService.currentUser">{{ (signinService.currentUser)?.email }}</span><span class="button" (click)="logout()">log out</span>
     
   </mat-toolbar>
 </header>
@@ -13,8 +13,22 @@
       mat-raised-button 
       color="primary">Favorite</button>
     <button class="btn" mat-raised-button color="primary">Cart</button>
-    <button routerLink='/signup' class="btn" mat-raised-button color="primary">Sign up</button>
-    <a routerLink='/signin'><button class="btn" mat-raised-button color="primary">Sign in</button></a>
+    <ng-template [ngIf]="!signinService.isAuthenticated()" ><a 
+    routerLink='/signup' ><button 
+      class="btn" 
+      mat-raised-button 
+      color="primary">Sign up</button></a>
+    <button  
+      class="btn" 
+      mat-raised-button 
+      color="primary" 
+      routerLink="/signin">Sign in</button></ng-template>
+    <button 
+      *ngIf="signinService.isAuthenticated()" 
+      class="btn" 
+      mat-raised-button 
+      color="primary" 
+      routerLink="/signin">Admin</button>
   </div>
   <hr>
 </nav>

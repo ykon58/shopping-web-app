@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { SigninService } from './auth/signin.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,12 @@ import { AngularFireAuth } from '@angular/fire/auth';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
+   constructor(public signinService: SigninService){
 
+   }
+    
+  logout() {
+    this.signinService.logout();
+  }
 }
+

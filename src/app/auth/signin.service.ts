@@ -74,4 +74,10 @@ export class SigninService {
   isAuthenticated() {
     return this.token != null;
   }
+
+  isLogin() : boolean {
+    if ( this.userDetails !==null) {
+      return true;
+    }
+  }
 }
